@@ -1,0 +1,98 @@
+#N canvas -11 28 1920 997 10;
+#X msg 631 658 stop;
+#X obj 753 823 dac~ 1 2;
+#X obj 673 245 threshold~ 1 3000 0.1 1000;
+#X obj 675 265 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X floatatom 626 353 5 0 0 0 - - - 0;
+#X obj 674 221 *~ 5;
+#X obj 691 124 adc~;
+#N canvas 0 22 796 453 (subpatch) 0;
+#X array array1 100 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 99 -1 200 140 1;
+#X restore 957 140 graph;
+#X obj 849 229 tabwrite~ array1;
+#X obj 855 185 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X text 915 207 msec.;
+#X obj 855 206 metro 160;
+#X text 691 355 Aves e insectos 305000 msec;
+#X msg 267 648 stop;
+#X obj 491 169 threshold~ 1 3000 0.1 1000;
+#X obj 503 280 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X floatatom 351 357 5 0 0 0 - - - 0;
+#X obj 575 908 dac~ 1 2;
+#X text 399 356 entorno 305000 msec;
+#X obj 491 140 *~ 1.5;
+#X obj 791 188 *~ 5.5;
+#X text 1210 164 [D.E.A.R]: Dispositivo Experiencial \, Autónomo y
+Reactivo \, Miguel Oliveros. II Festival Aloha Invierno \, La Casa
+Encendida \, Madrid 2015/16;
+#X obj 310 674 readsf~ 4;
+#X obj 351 335 random 4;
+#X obj 352 313 metro 10000;
+#X obj 351 380 sel 0 1 2 3;
+#X msg 336 416 open celery.wav \, 1;
+#X msg 347 441 open goofy.wav \, 1;
+#X msg 353 469 open pull.wav \, 1;
+#X msg 362 495 open tubo.wav \, 1;
+#X obj 630 386 sel 0 1 2 3;
+#X obj 627 330 random 4;
+#X obj 627 309 metro 10200;
+#X msg 627 432 open celery.wav \, 1;
+#X msg 664 470 open goofy.wav \, 1;
+#X msg 692 500 open pull.wav \, 1;
+#X msg 720 537 open tubo.wav \, 1;
+#X obj 752 740 readsf~ 4;
+#X obj 318 730 *~ 0.5;
+#X connect 0 0 37 0;
+#X connect 2 0 3 0;
+#X connect 4 0 30 0;
+#X connect 5 0 2 0;
+#X connect 6 0 5 0;
+#X connect 6 0 19 0;
+#X connect 6 0 20 0;
+#X connect 9 0 11 0;
+#X connect 11 0 8 0;
+#X connect 13 0 22 0;
+#X connect 15 0 24 0;
+#X connect 15 0 32 0;
+#X connect 16 0 25 0;
+#X connect 19 0 14 0;
+#X connect 20 0 8 0;
+#X connect 22 0 38 0;
+#X connect 22 1 38 0;
+#X connect 22 2 38 0;
+#X connect 22 3 38 0;
+#X connect 23 0 16 0;
+#X connect 24 0 23 0;
+#X connect 25 0 26 0;
+#X connect 25 1 27 0;
+#X connect 25 2 28 0;
+#X connect 25 3 29 0;
+#X connect 26 0 22 0;
+#X connect 27 0 22 0;
+#X connect 28 0 22 0;
+#X connect 29 0 22 0;
+#X connect 30 0 33 0;
+#X connect 30 1 34 0;
+#X connect 30 2 35 0;
+#X connect 30 3 36 0;
+#X connect 31 0 4 0;
+#X connect 32 0 31 0;
+#X connect 33 0 37 0;
+#X connect 34 0 37 0;
+#X connect 35 0 37 0;
+#X connect 36 0 37 0;
+#X connect 37 0 1 0;
+#X connect 37 1 1 0;
+#X connect 37 2 1 0;
+#X connect 37 3 1 0;
+#X connect 37 4 1 1;
+#X connect 38 0 17 0;
+#X connect 38 0 17 1;
