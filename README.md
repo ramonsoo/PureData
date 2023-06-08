@@ -4,5 +4,7 @@ Este proyecto se trata de de un sistema de sonidos que aparecen de forma aleator
 
 https://ydray.com/get/t/16862573018709DGtW62b8293b8d53TI
 
-enlace web a archivos
-guia para descargar
+A través del enlace de ydray, se pueden descargar los cuatro audios incluídos en el archivo de pure data. 
+
+En el repositorio se incluye además un gif de la representación que me imagino al escuchar lo creado en esta actividad. 
+
